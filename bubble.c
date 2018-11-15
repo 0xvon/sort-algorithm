@@ -19,18 +19,17 @@ int main()
     {
         for (i = 1; i < m; i++)
         {
-            if (a[i] > a[i + 1])
+            if (a[i] < a[i + 1])
             {
                 dummy = a[i];
                 a[i] = a[i + 1];
                 a[i + 1] = dummy;
             }
         }
-        for (int k = 1; k <= n; k++)
-        {
-            printf(" %d ", a[k]);
-        }
-        printf("\n");
+    }
+    for (int k = 1; k <= n; k++)
+    {
+        printf("%3d", a[k]);
     }
 
     return 0;
